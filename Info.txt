@@ -16,7 +16,7 @@ ENVIRONMENT:
         [options]
         [build_requires]
         [env]
-    ), but I don't think it matters much.
+    ), but I don't think the profile matters.
 
 STEPS TO REPRODUCE THE BUG:
 
@@ -43,6 +43,8 @@ STEPS TO REPRODUCE THE BUG:
             AssertionError
 
             ERROR: <EMPTY>
+
+**NOTE** Call the provided script "test.sh" to call all 4 of the above commands.
 
 - However, if you remove the last two lines (
         def package_id(self):
